@@ -217,6 +217,9 @@ if (\Discord2\User::isLoggedIn()) {
 	$__output .= "</div>";
 }
 /* */
+$ab1 = collapse($abilityOne["name"],"<small class='text-muted'>".$abilityOne['desc']."</small>");
+$ab2 = collapse($abilityTwo["name"],"<small class='text-muted'>".$abilityTwo['desc']."</small>");
+$ha = collapse($abilityHA["name"],"<small class='text-muted'>".$abilityHA['desc']."</small>");
 
 $__output .= <<<end
 
@@ -249,7 +252,7 @@ $__output .= <<<end
                 <p class="mb-0">Ability One</p>
               </div>
               <div class="col-sm-9">
-                <p class="text-muted mb-0">{$abilityOne["name"]}<br /><small>{$abilityOne['desc']}</small></p>
+                <p class="text-muted mb-0">{$ab1}</p>
               </div>
             </div>
             <hr>
@@ -259,7 +262,7 @@ $__output .= <<<end
                 <p class="mb-0">Ability Two</p>
               </div>
               <div class="col-sm-9">
-                <p class="text-muted mb-0">{$abilityTwo["name"]}<br /><small>{$abilityTwo['desc']}</small></p>
+                <p class="text-muted mb-0">{$ab2}</p>
               </div>
             </div>
             <hr>
@@ -269,7 +272,7 @@ $__output .= <<<end
                 <p class="mb-0">Hidden Ability</p>
               </div>
               <div class="col-sm-9">
-                <p class="text-muted mb-0">{$abilityHA["name"]}<br /><small>{$abilityHA['desc']}</small></p>
+                <p class="text-muted mb-0">{$ha}</p>
               </div>
             </div>
             <hr>
@@ -294,6 +297,9 @@ $__output .= <<<end
               <div class="card-body">
                 <p class="mb-4"><span class="text-primary font-italic me-1">boosted </span> Stats <small>BST {$boostedBST}</small>
                 </p>
+end;
+
+$i12 = <<<end
                 <p class="mb-1" style="font-size: .77rem;">HP <small>{$boostedStats[0]['value']}</small></p>
                 <div class="progress rounded" style="height: 5px;">
                   <div class="progress-bar" role="progressbar" style="width: {$boostedStats[0]['percent']}%" aria-valuenow="{$boostedStats[0]['value']}"
@@ -324,6 +330,10 @@ $__output .= <<<end
                   <div class="progress-bar" role="progressbar" style="width: {$boostedStats[5]['percent']}%" aria-valuenow="{$boostedStats[5]['value']}"
                     aria-valuemin="0" aria-valuemax="255"></div>
                 </div>
+end;
+$__output .= collapse("See Boosted Stats",$i12);
+unset($i12);
+$__output .= <<<end
               </div>
             </div>
           </div>
@@ -334,6 +344,8 @@ $__output .= <<<end
               <div class="card-body">
                 <p class="mb-4"><span class="text-primary font-italic me-1">original </span> Stats <small>BST {$ogBST}</small>
                 </p>
+end;
+$i12 = <<<end
                 <p class="mb-1" style="font-size: .77rem;">HP <small>{$ogStats[0]['value']}</small></p>
                 <div class="progress rounded" style="height: 5px;">
                   <div class="progress-bar" role="progressbar" style="width: {$ogStats[0]['percent']}%" aria-valuenow="{$ogStats[0]['value']}"
@@ -364,7 +376,10 @@ $__output .= <<<end
                   <div class="progress-bar" role="progressbar" style="width: {$ogStats[5]['percent']}%" aria-valuenow="{$ogStats[5]['value']}"
                     aria-valuemin="0" aria-valuemax="255"></div>
                 </div>
-				
+		
+end;
+$__output .= collapse("See Original Stats",$i12);
+$__output .= <<<end
               </div>
             </div>
           </div>

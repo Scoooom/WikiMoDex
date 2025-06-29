@@ -176,7 +176,9 @@ $defPer = floor(($mon->def / 255)*100);
 $spatkPer = floor(($mon->spatk / 255)*100);
 $spdefPer = floor(($mon->spdef / 255)*100);
 $spdPer = floor(($mon->spd / 255)*100);
-
+$ab1 = collapse($abilityOne->name,"<small class='text-muted'>".$abilityOne->description."</small>");
+$ab2 = collapse($abilityTwo->name,"<small class='text-muted'>".$abilityTwo->description."</small>");
+$ha = collapse($abilityHA->name,"<small class='text-muted'>".$abilityHA->description."</small>");
 $__output .= <<<end
 
           </div>
@@ -199,7 +201,7 @@ $__output .= <<<end
                 <p class="mb-0">Ability One</p>
               </div>
               <div class="col-sm-9">
-                <p class="text-muted mb-0">{$abilityOne->name}<br /><small>{$abilityOne->description}</small></p>
+                <p class="text-muted mb-0">{$ab1}</p>
               </div>
             </div>
             <hr>
@@ -209,7 +211,7 @@ $__output .= <<<end
                 <p class="mb-0">Ability Two</p>
               </div>
               <div class="col-sm-9">
-                <p class="text-muted mb-0">{$abilityTwo->name}<br /><small>{$abilityTwo->description}</small></p>
+                <p class="text-muted mb-0">{$ab2}</p>
               </div>
             </div>
             <hr>
@@ -219,7 +221,7 @@ $__output .= <<<end
                 <p class="mb-0">Hidden Ability</p>
               </div>
               <div class="col-sm-9">
-                <p class="text-muted mb-0">{$abilityHA->name}<br /><small>{$abilityHA->description}</small></p>
+                <p class="text-muted mb-0">{$ha}</p>
               </div>
             </div>
             <hr>
@@ -234,6 +236,8 @@ $__output .= <<<end
               <div class="card-body">
                 <p class="mb-4"><span class="text-primary font-italic me-1">glitched </span> Stats <small>BST {$mon->bst}</small>
                 </p>
+end;
+$k12 = <<<end
                 <p class="mb-1" style="font-size: .77rem;">HP <small>{$mon->hp}</small></p>
                 <div class="progress rounded" style="height: 5px;">
                   <div class="progress-bar" role="progressbar" style="width: {$hpPer}%" aria-valuenow="{$mon->hp}"
@@ -264,6 +268,9 @@ $__output .= <<<end
                   <div class="progress-bar" role="progressbar" style="width: {$spdPer}%" aria-valuenow="{$mon->spd}"
                     aria-valuemin="0" aria-valuemax="255"></div>
                 </div>
+end;
+$__output .= collapse("View Stats",$k12);
+$__output .= <<<end
               </div>
             </div>
           </div>
