@@ -1,0 +1,2 @@
+<?php
+redirect("/gallery.html");
