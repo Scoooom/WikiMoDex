@@ -1,6 +1,6 @@
 <?php
 ini_set('display_errors',0);
-ini_set('error_reporting',E_ERROR );
+ini_set('error_reporting',E_ERROR | E_PARSE );
 define('GPATH','/home/void/pokevoid-main/./public/images/pokemon/glitch/');
 
 define('basePath','/var/www/void.scooom.xyz/');
