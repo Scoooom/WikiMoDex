@@ -8,7 +8,7 @@ function allowed_guid($gid) {
   $tag = "gid".$gid;
   return isset($allowed->$tag);
 }
-define('CID',json_encode(["cid1388985958371688448"=>1,"cid1381010953671540876"=>1]));
+define('CID',json_encode(["cid1388985958371688448"=>1,"cid1381010953671540876"=>1,"cid1365402438969983066"=>1]));
 
 function allowed_cid($cid) {
   $allowed = json_decode(CID);
