@@ -5,9 +5,30 @@ class BuiltIn {
   public $baseMon, $name, $type1, $type2, $a1, $a2, $ha, $bst, $hp, $atk, $def, $spatk, $spdef, $spd = null;
   
   public static function LoadCore($name) {
+	//$name;
     $ret = self::Load();
-	$ret = $ret->$name;
-	return $ret;
+	if (isset($ret->$name)) {
+	  $ret = $ret->$name;
+	  return $ret;
+	} else return false;
+  }
+  
+  public static function LoadSmitty($name) {
+	//$name;
+    $ret = self::SmittyLoad();
+	if (isset($ret->$name)) {
+	  $ret = $ret->$name;
+	  return $ret;
+	} else return false;
+  }
+  
+  public static function LoadSmittyForm($name) {
+	//$name;
+    $ret = self::SmittyFormLoad();
+	if (isset($ret->$name)) {
+	  $ret = $ret->$name;
+	  return $ret;
+	} else return false;
   }
   
     public static function getNumType($id) {
@@ -72,6 +93,15 @@ class BuiltIn {
   
     public static function Load() {
 		$data = file_get_contents(BUILTIN);
+		return json_decode($data);
+	}
+	
+	public static function SmittyLoad() {
+		$data = file_get_contents(BUILTINS);
+		return json_decode($data);
+	}
+	public static function SmittyFormLoad() {
+		$data = file_get_contents(BUILTINF);
 		return json_decode($data);
 	}
 

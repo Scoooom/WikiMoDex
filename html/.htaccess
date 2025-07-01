@@ -20,6 +20,9 @@ RewriteRule ^g:(.*):(.*?)\.html$ /index.php?page=glitchMon&form=$1&id=$2 [QSA,L]
 
 
 RewriteRule ^core:(.*)\.html$ /index.php?page=coreMon&form=$1 [QSA,L]
+RewriteRule ^smitty:(.*)\.html$ /index.php?page=smittyMon&form=$1 [QSA,L]
+
+RewriteRule ^smittyForm:(.*)\.html$ /index.php?page=smittyFormMon&form=$1 [QSA,L]
 
 RewriteRule ^d:(.*?)\.html$ /index.php?page=download&id=$1 [QSA,L]
 

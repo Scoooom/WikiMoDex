@@ -16,7 +16,7 @@ $name = $u->username;
 $join = date("F j, Y",$u->join_date);
 $lastLogin = date("F j, Y, g:i a",$u->last_login);
 $__output = <<<end
-<section style="background-color: #eee;">
+<section >
 
 
     <div class="row">

@@ -29,6 +29,7 @@ class User {
 		// echo "DATA: <br /><pre>".print_r($dis,1)."</pre>";
 		$data = $dis['data'];
 		if (@$data['message'] == "401: Unauthorized") {
+                        self::destroyCookie();
 			return false;
 		} else {
 			if (self::getUsername() != $data['username']) {

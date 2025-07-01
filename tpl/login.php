@@ -4,7 +4,7 @@ $a = new Discord2\Discord();
 if (isset($_POST['loginkey'])) {
   setCookie("returnURL",$_POST['returnURL']);
   redirect($a->url());
-} elseif (isset($_POST['logoutkey'])) {
+} elseif (isset($_REQUEST['logoutkey'])) {
 	\Discord2\User::destroyCookie();
 	redirect("/index.html");
 } else if (isset($_GET['code'])) {

@@ -7,6 +7,16 @@ $showGacha = 1;
 <p>&nbsp;</p>
 end;
 
+$smittyForms = "";
+
+if (\Discord2\User::isLoggedIn()) {
+  $user = \Users\Users::getUser();	
+  if ($user->smitty == true) {
+	$smittyForms = "\n".'          <a class="dropdown-item" href="/gallerySmitty.html">SMITTY Pokemon</a><a class="dropdown-item" href="/gallerySmittyForm.html">SMITTY Forms</a>';
+  }
+}
+
+
 $nav = <<<end
 <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
       
@@ -19,27 +29,26 @@ $nav = <<<end
           <li class="nav-item active">
             <a class="nav-link" href="/">Home</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="/gallery.html">Gallery</a>
-          </li>
-		  <li class="nav-item">
-            <a class="nav-link" href="/galleryCore.html">Core Glitches</a>
-          </li>
+		  
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Pokemon Forms
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="./gallery.html">Mod Glitch Forms`</a>
+          <a class="dropdown-item" href="./galleryCore.html">Core Glitches</a>{$smittyForms}
+        </div>
+      </li>
+	  <li class="nav-item">
+		<a class="nav-link" href="/gacha.html">Gacha Calandar</a>
+	  </li>
 
 end;
 
-if ($showGacha) {
-
-$nav .= <<<end
-          <li class="nav-item">
-            <a class="nav-link" href="/gacha.html">Gacha Calandar</a>
-          </li>
-end;
-
-}
 
 if (\Discord2\User::isLoggedIn()) {
 	$user = \Users\Users::getUser();
+
 	$name = $user->username;	
 	$img = "<a href='/u:".$name.".html'><img width='32px' height='32px' style='display: block' class='image-round' src='".$user->getAvatarURL()."' /></a>";
 			logMsg("Don't output todo links");
@@ -54,19 +63,29 @@ if (\Discord2\User::isLoggedIn()) {
 */
 
 	$nav .= <<<end
-          <li class="nav-item">
-            <a class="nav-link" href="/profile.html">Your Profile</a>
-          </li>
-		  <li class="nav-item">
-            <a class="nav-link" href="/create.html">Upload Glitch</a>
-          </li>
+	
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Account
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="/profile.html">Profile</a>
+          <a class="dropdown-item" href="./create.html">Upload Glitch</a>
+		  <a class="dropdown-item" href="./login.html?logoutkey=1">Logout</a>
+		  
+
+</div>
+        
+      </li>
+
 	  
 	</ul>
 {$k}
+<!-- 
         <form class="form-inline my-2 my-md-0" method="post" action="login.html">
 
 	<input type="hidden" name="logoutkey" value="1" /><input type="hidden" name="returnURL" value="/index.html" />
-          <input class="form-control" type="submit" value="Logout {$name}" placeholder="Logout" /> <div class="image-wrapper">{$img}</div>
+          <input class="form-control" type="submit" value="Logout {$name}" placeholder="Logout" /> <div class="image-wrapper">{$img}</div> -->
 end;
 
 } else {

@@ -5,6 +5,19 @@
  * @copyright : https://markis.dev
  */
  
+ini_set('display_errors',0);
+ini_set('error_reporting',E_ERROR | E_PARSE );
+define('GPATH','/home/void/pokevoid-main/./public/images/pokemon/glitch/');
+
+define('basePath','/var/www/void.scooom.xyz/');
+define('baseTplPath',basePath.'/tpl/');
+define('HardPath',basePath.'Classes/');
+define('debugLog',basePath.'/logs/debugLog');
+define('debugMode',1);
+define('BUILTIN',basePath.'/html/glitch_parsed.json');
+define('BUILTINS',basePath.'/html/smitty_parsed.json');
+define('BUILTINF',basePath.'/html/smittyf_parsed.json');
+
 # A function to redirect user.
 function redirect($url)
 {
