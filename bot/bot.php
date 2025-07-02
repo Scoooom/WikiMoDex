@@ -285,7 +285,7 @@ $spdPer = floor(($core->spd / 255)*100);
 			  else {
 
 			  $tpl = <<<end
-			# [{%name%}](<https://void.scooom.xyz/smitty:{%name%}.html>)
+			# [{%name%}](<https://void.scooom.xyz/smitty:{%name%}.html>) - {%%code%%}
 ### Typing: `{%typeOne%}` / `{%typeTwo%}`
 ### Abilties
 `{%ab1%}`
@@ -305,7 +305,7 @@ BST: {%bstValue%}
 end;
 
               $img = $a->front;
-
+                          $code = `/usr/local/bin/getUniCode {$core->name} | gawk -F"'" '{print $4}'`;
 			  $tpl = str_replace('{%name%}',trim($core->name),$tpl);
 			  $tpl = str_replace('{%id%}',$a->id,$tpl);
 			  $tpl = str_replace('{%by%}',$maker,$tpl);
@@ -321,7 +321,8 @@ $spdPer = floor(($core->spd / 255)*100);
 			  // Stats
 			  $tpl = str_replace('{%statBarHP%}',\statBar($hpPer),$tpl);
 			  $tpl = str_replace('{%hpValue%}',($core->hp),$tpl);
-			  
+                          $tpl = str_replace('{%%code%%}',$code,$tpl);
+
 			  $tpl = str_replace('{%statBarAtk%}',\statBar($atkPer),$tpl);
 			  $tpl = str_replace('{%atkValue%}',($core->atk),$tpl);
 			  

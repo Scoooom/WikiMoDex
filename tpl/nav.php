@@ -42,6 +42,9 @@ $nav = <<<end
 	  <li class="nav-item">
 		<a class="nav-link" href="/gacha.html">Gacha Calandar</a>
 	  </li>
+	  <li class="nav-item">
+		<a class="nav-link" href="/faq.html">FAQs</a>
+	  </li>
 
 end;
 

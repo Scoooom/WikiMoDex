@@ -28,6 +28,19 @@ $__output = <<<end
     <link href="/css/starter-template.css" rel="stylesheet">
     <link href="/css/ScumsCyborg.css" rel="stylesheet">
     <style type="text/css">
+	.card {
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #361b63 !important;
+    background-clip: border-box;
+    border: 1px solid #100720;
+    border-radius: .25rem;
+}
 body {
     margin: 0;
     font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans","Liberation Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
@@ -80,6 +93,10 @@ button.form-control {
     padding: 1.25rem;
     background-color: #20172f;
     color: white;
+}
+.btn.focus, .btn:focus {
+    outline: 0;
+    box-shadow: none;
 }
 .card {
     position: relative;
