@@ -298,6 +298,7 @@ end;
 		} else if ($command == "!glitch" || $command == "!core" || !$command == "!smitty") {
 			$message->reply("These commands are outdated. Please use the `!form` command!");
 			return;
+		}
 
 
     });
