@@ -34,7 +34,12 @@ function flipBitwise($a) {
 function code($txt) {
     return "<code style='white-space: pre;'>".$txt."</code>";
 }
-
+function dCode($txt) {
+	if (is_object($txt) || is_array($txt))
+		die(code(print_r($txt,1)));
+	else
+		die(code($txt));
+}
 function collapse($btn,$txt) {
     $id = 'c'.rand(10000,20000).time();   
     return "<p><a class='btn btn-primary' data-toggle='collapse' href='#{$id}' role='button' aria-expanded='false' aria-controls='{$id}'>{$btn}</a></p><div class='collapse' id='{$id}'>{$txt}</div>";
