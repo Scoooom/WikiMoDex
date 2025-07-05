@@ -114,7 +114,7 @@ $discord->on('init', function (Discord $discord) {
 			//logStr(print_r($form,1)); return;
             try {
 			  $tpl = <<<end
-			# {%%urlName%%}(<https://void.scooom.xyz/{%%url%%}.html>)
+			# {%%urlName%%}(<https://void.scooom.xyz/{%%url%%}.html>) {%%code%%}
 {%%maker%%}
 ### Typing: `{%typeOne%}` / `{%typeTwo%}`
 ### Abilties
@@ -144,14 +144,19 @@ end;
 				$tpl = str_replace("{%%url%%}",'g:{%name%}:{%id%}',$tpl);
 				$tpl = str_replace('{%%maker%%}','## Created By [{%by%}](<https://void.scooom.xyz/u:{%by%}.html>)',$tpl);
 				$tpl = str_replace("{%%urlName%%}",'[{%name%} (Rating: {%rating%})]',$tpl);
-				$tpl = str_replace("{%%smittyItems%%}",'',$tpl);
+				$tpl = str_replace("{%%code%%}",'',$tpl);
+                                $tpl = str_replace("{%%smittyItems%%}",'',$tpl);
 			} else { 
 				$tpl = str_replace("-# Rivals: {%rivals%}",'',$tpl);
 				$tpl = str_replace("{%%url%%}",'core:{%name%}',$tpl);
 				$tpl = str_replace('{%%maker%%}','',$tpl);
 				$tpl = str_replace("{%%urlName%%}",'[{%name%}]',$tpl);
 				if ($smitty) {
+                                  $code1 = trim(`/usr/local/bin/getUniCode {$core->name} | gawk -F"'" '{print $4}'`,"\n");
+				  if (strlen($code1) != 6)
+                                    $code1 = trim(`/usr/local/bin/getFormCode {$core->name} | gawk -F"'" '{print $4}'`,"\n");
 					$tpl = str_replace("{%%smittyItems%%}","\n".'Smitty Items: `{%%items%%}`',$tpl);
+					$tpl = str_replace("{%%code%%}",' - `'.$code1.'`',$tpl);
 				    $items = \Glitches\BuiltIn::getSmittyItems(strtolower(trim($core->name)));
 					if ($items === false) $items = "Unknown! Please contact ".DTAG." on discord!";
 					else $items = implode(", ",$items);
@@ -295,7 +300,7 @@ end;
 			    $message->reply("User Not Found! Please login at the [WikiMoDex](https://void.scooom.xyz/index.html) before attempting to Authorize!");
 				return;
 			}
-		} else if ($command == "!glitch" || $command == "!core" || !$command == "!smitty") {
+		} else if ($command == "!glitch" || $command == "!core" || $command == "!smitty") {
 			$message->reply("These commands are outdated. Please use the `!form` command!");
 			return;
 		}
