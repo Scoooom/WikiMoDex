@@ -4,6 +4,19 @@ class BuiltIn {
   
   public $baseMon, $name, $type1, $type2, $a1, $a2, $ha, $bst, $hp, $atk, $def, $spatk, $spdef, $spd = null;
   
+  public static function getSmittyItems($form) {
+	  $forms = file_get_contents(\basePath.'/smittyItems.json');
+	  $form = strtolower($form);
+	  $data = json_decode($forms);
+	  if (isset($data->$form)) {
+		  $return = $data->$form;
+		  foreach ($return as &$item) {
+			  $item = str_replace("SMITTY_",'',$item);
+		  }
+		  return $return;
+	  } else return false;
+  }
+  
   public static function LoadCore($name) {
 	//$name;
     $ret = self::Load();
