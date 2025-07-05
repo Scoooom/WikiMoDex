@@ -140,8 +140,11 @@ $t2 = getTypeEn($typeTwo);
 $abilityOne = $mon->ab1;
 $abilityTwo = $mon->ab2;
 $abilityHA = $mon->ha;
+$items = \Glitches\BuiltIn::getSmittyItems($name);
+if ($items === false) $items = "Unknown! Please contact ".DTAG." on discord!";
+else $items = implode(", ",$items);
 
-$desc = $name.'; Primary '.$t1."; Secondary: {$t2}; Ability 1: ".$abilityOne->name."; Ability 2: ".$abilityTwo->name."; HA: ".$abilityHA->name."; Glitch of ".$mons.".";
+$desc = $name.'; Primary '.$t1."; Secondary: {$t2}; Ability 1: ".$abilityOne->name."; Ability 2: ".$abilityTwo->name."; HA: ".$abilityHA->name."; Requires: ".$items;
 $url = "https://".$_SERVER["HTTP_HOST"]	. $_SERVER['REQUEST_URI'];
 $imgurl = "https://void.scooom.xyz/cFront:".$name.".png";
 $extraHead = <<<end
@@ -197,15 +200,7 @@ $__output .= <<<end
       <div class="col-lg-8">
         <div class="card mb-4">
           <div class="card-body">
-            <div class="row">
-              <div class="col-sm-3">
-                <p class="mb-0">SMITTY Pokemon</p>
-              </div>
-              <div class="col-sm-9">
-                <p class="text-muted mb-0">{$mons}</p>
-              </div>
-            </div>
-            <hr>
+
             <div class="row">
               <div class="col-sm-3">
                 <p class="mb-0">Ability One</p>
@@ -235,6 +230,18 @@ $__output .= <<<end
               </div>
             </div>
             <hr>
+
+            <div class="row">
+              <div class="col-sm-3">
+                <p class="mb-0">SMITTY Items</p>
+              </div>
+              <div class="col-sm-9">
+                <p class="text-muted mb-0">{$items}</p>
+              </div>
+            </div>
+            <hr>
+			
+			
 
 
           </div>
