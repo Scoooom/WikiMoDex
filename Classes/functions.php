@@ -17,6 +17,7 @@ define('debugMode',1);
 define('BUILTIN',basePath.'/html/glitch_parsed.json');
 define('BUILTINS',basePath.'/html/smitty_parsed.json');
 define('BUILTINF',basePath.'/html/smittyf_parsed.json');
+define('DTAG','scooom');
 
 # A function to redirect user.
 function redirect($url)
