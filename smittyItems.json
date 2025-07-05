@@ -1,0 +1,671 @@
+{
+  
+  "tartauros": [
+    "SMITTY_CUBE",
+    "SMITTY_SOUL",
+    "SMITTY_SHADOW",
+    "SMITTY_TOUCH"
+  ],
+
+  
+  "zamowak": [
+    "SMITTY_CIRCUIT",
+    "SMITTY_CUBE",
+    "SMITTY_VOID",
+    "SMITTY_GLITCH"
+  ],
+
+  
+  "greyokai": [
+    "SMITTY_CIRCUIT",
+    "SMITTY_SHARD",
+    "SMITTY_METAL",
+    "SMITTY_CUBE"
+  ],
+
+  
+  "jormunza": [
+    "SMITTY_VOID",
+    "SMITTY_JUICE",
+    "SMITTY_ENERGY",
+    "SMITTY_CRYSTAL"
+  ],
+
+  
+  "licthulhu": [
+    "SMITTY_SHARD",
+    "SMITTY_SURGE",
+    "SMITTY_SLIME",
+    "SMITTY_ORB"
+  ],
+
+  
+  "plasmist": [
+    "SMITTY_POISON",
+    "SMITTY_FLUX",
+    "SMITTY_DARK",
+    "SMITTY_CORE"
+  ],
+
+  
+  "plustra": [
+    "SMITTY_METAL",
+    "SMITTY_TOUCH",
+    "SMITTY_POISON",
+    "SMITTY_CRYSTAL"
+  ],
+
+  
+  "hellchar": [
+    "SMITTY_VOICE",
+    "SMITTY_SURGE",
+    "SMITTY_FEAR",
+    "SMITTY_FIBER"
+  ],
+
+  
+  "feareon": [
+    "SMITTY_PULSE",
+    "SMITTY_RELIC",
+    "SMITTY_TOUCH",
+    "SMITTY_SHARD"
+  ],
+
+  
+  "omninom": [
+    "SMITTY_LIQUID",
+    "SMITTY_CIRCUIT",
+    "SMITTY_ORB",
+    "SMITTY_NEBULA"
+  ],
+
+  
+  "necromew": [
+    "SMITTY_CORE",
+    "SMITTY_NEBULA",
+    "SMITTY_FEAR",
+    "SMITTY_DREAMS"
+  ],
+
+  
+  "diablotar": [
+    "SMITTY_PLASMA",
+    "SMITTY_ESSENCE",
+    "SMITTY_SOUL",
+    "SMITTY_MASK"
+  ],
+
+  
+  "smitom": [
+    "SMITTY_VOID",
+    "SMITTY_FIBER",
+    "SMITTY_LIQUID",
+    "SMITTY_FUEL"
+  ],
+  
+  "zoomer": [
+    "SMITTY_TOUCH",
+    "SMITTY_GLITCH",
+    "SMITTY_CRYSTAL",
+    "SMITTY_FLUX"
+  ],
+
+  
+  "voidash": [
+    "SMITTY_CIRCUIT",
+    "SMITTY_MASK",
+    "SMITTY_CUBE",
+    "SMITTY_PRISM"
+  ],
+
+  
+  "wahcky": [
+    "SMITTY_TOUCH",
+    "SMITTY_PRISM",
+    "SMITTY_CRYSTAL",
+    "SMITTY_POISON"
+  ],
+
+  
+  "wahzebub": [
+    "SMITTY_GLITCH",
+    "SMITTY_SHADOW",
+    "SMITTY_AURA",
+    "SMITTY_RELIC"
+  ],
+
+  
+  "fineferno": [
+    "SMITTY_NEBULA",
+    "SMITTY_AURA",
+    "SMITTY_CHAIN",
+    "SMITTY_HEART"
+  ],
+
+  
+  "sorbred": [
+    "SMITTY_FUEL",
+    "SMITTY_ENERGY",
+    "SMITTY_SHADOW",
+    "SMITTY_CRYSTAL"
+  ],
+
+  
+  "corpanzee": [
+    "SMITTY_TOUCH",
+    "SMITTY_ENERGY",
+    "SMITTY_HEART",
+    "SMITTY_FEAR"
+  ],
+
+  
+  "plankling": [
+    "SMITTY_FIBER",
+    "SMITTY_VOID",
+    "SMITTY_JUICE",
+    "SMITTY_PULSE"
+  ],
+
+  
+  "timbrick": [
+    "SMITTY_FIBER",
+    "SMITTY_SLIME",
+    "SMITTY_DREAMS",
+    "SMITTY_PULSE"
+  ],
+
+  
+  "plankult": [
+    "SMITTY_FEAR",
+    "SMITTY_JUICE",
+    "SMITTY_PULSE",
+    "SMITTY_ORB"
+  ],
+
+  
+  "sorbobo": [
+    "SMITTY_FLUX",
+    "SMITTY_SHARD",
+    "SMITTY_CHAIN",
+    "SMITTY_PLASMA"
+  ],
+
+  
+  "hamtaro": [
+    "SMITTY_ERROR",
+    "SMITTY_AURA",
+    "SMITTY_HUMOR",
+    "SMITTY_JUICE"
+  ],
+  
+  "elmold": [
+    "SMITTY_METAL",
+    "SMITTY_FLUX",
+    "SMITTY_ORB",
+    "SMITTY_DREAMS"
+  ],
+
+  "funghomp": [
+    "SMITTY_MASK",
+    "SMITTY_ORB",
+    "SMITTY_BRAIN",
+    "SMITTY_SOUL"
+  ],
+
+  
+  "riddicus": [
+    "SMITTY_BRAIN",
+    "SMITTY_CHAOS",
+    "SMITTY_RELIC",
+    "SMITTY_AURA"
+  ],
+
+  
+  "boxecutive": [
+    "SMITTY_CIRCUIT",
+    "SMITTY_POISON",
+    "SMITTY_CUBE",
+    "SMITTY_DREAMS"
+  ],
+
+  
+  "patnius": [
+    "SMITTY_LIQUID",
+    "SMITTY_BRAIN",
+    "SMITTY_HUMOR",
+    "SMITTY_RELIC"
+  ],
+
+  
+  "tentacrim": [
+    "SMITTY_POISON",
+    "SMITTY_AURA",
+    "SMITTY_FLUX",
+    "SMITTY_NEBULA"
+  ],
+
+  
+  "undeadtunasmit": [
+    "SMITTY_CORE",
+    "SMITTY_MASK",
+    "SMITTY_VOID",
+    "SMITTY_NEBULA"
+  ],
+
+  
+  "genomander": [
+    "SMITTY_AURA",
+    "SMITTY_ERROR",
+    "SMITTY_SHARD",
+    "SMITTY_FIBER"
+  ],
+
+  
+  "tormentle": [
+    "SMITTY_SLIME",
+    "SMITTY_VOICE",
+    "SMITTY_ESSENCE",
+    "SMITTY_PLASMA"
+  ],
+
+  
+  "terrorbulb": [
+    "SMITTY_JUICE",
+    "SMITTY_CORE",
+    "SMITTY_CUBE",
+    "SMITTY_CIRCUIT"
+  ],
+
+  
+  "scarablanc": [
+    "SMITTY_METAL",
+    "SMITTY_VOICE",
+    "SMITTY_LIQUID",
+    "SMITTY_JUICE"
+  ],
+
+  
+  "batmare": [
+    "SMITTY_FEAR",
+    "SMITTY_SLIME",
+    "SMITTY_POISON",
+    "SMITTY_ERROR"
+  ],
+
+  
+  "dankitar": [
+    "SMITTY_HUMOR",
+    "SMITTY_SHARD",
+    "SMITTY_LIQUID",
+    "SMITTY_ERROR"
+  ],
+  
+  "cephaloom": [
+    "SMITTY_NEBULA",
+    "SMITTY_FUEL",
+    "SMITTY_FIBER",
+    "SMITTY_AURA"
+  ],
+
+  
+  "smitward": [
+    "SMITTY_GLITCH",
+    "SMITTY_VOICE",
+    "SMITTY_POISON",
+    "SMITTY_CORE"
+  ],
+
+  
+  "gastmoji": [
+    "SMITTY_FIBER",
+    "SMITTY_PRISM",
+    "SMITTY_TOUCH",
+    "SMITTY_HUMOR"
+  ],
+
+  
+  "niteknite": [
+    "SMITTY_DREAMS",
+    "SMITTY_PLASMA",
+    "SMITTY_PRISM",
+    "SMITTY_CRYSTAL"
+  ],
+
+  
+  "dignitier": [
+    "SMITTY_DREAMS",
+    "SMITTY_CHAIN",
+    "SMITTY_PLASMA",
+    "SMITTY_HEART"
+  ],
+
+  
+  "smitshade": [
+    "SMITTY_HEART",
+    "SMITTY_VOICE",
+    "SMITTY_CHAIN",
+    "SMITTY_DARK"
+  ],
+
+  "smitspect": [
+    "SMITTY_POISON",
+    "SMITTY_LIQUID",
+    "SMITTY_JUICE",
+    "SMITTY_SLIME"
+  ],
+
+  "smitwraith": [
+    "SMITTY_BRAIN",
+    "SMITTY_DREAMS",
+    "SMITTY_ESSENCE",
+    "SMITTY_SOUL"
+  ],
+
+  "smiternal": [
+    "SMITTY_CIRCUIT",
+    "SMITTY_ENERGY",
+    "SMITTY_GLITCH",
+    "SMITTY_ERROR"
+  ],
+
+  
+  "smittyfish": [
+    "SMITTY_SLIME",
+    "SMITTY_ERROR",
+    "SMITTY_MASK",
+    "SMITTY_LIQUID"
+  ],
+
+  
+  "smittellect": [
+    "SMITTY_BRAIN",
+    "SMITTY_VOICE",
+    "SMITTY_SURGE",
+    "SMITTY_CRYSTAL"
+  ],
+
+  
+  "gallux": [
+    "SMITTY_CUBE",
+    "SMITTY_CHAIN",
+    "SMITTY_SOUL",
+    "SMITTY_HEART"
+  ],
+
+  
+  "hostmitty": [
+    "SMITTY_METAL",
+    "SMITTY_DREAMS",
+    "SMITTY_HUMOR",
+    "SMITTY_DARK"
+  ],
+
+  
+  "smittynarie": [
+    "SMITTY_BRAIN",
+    "SMITTY_HUMOR",
+    "SMITTY_GLITCH",
+    "SMITTY_ERROR"
+  ],
+
+  
+  "batboxbaba": [
+    "SMITTY_GLITCH",
+    "SMITTY_VOID",
+    "SMITTY_CHAIN",
+    "SMITTY_CORE"
+  ],
+  
+  "batboxbeyond": [
+    "SMITTY_METAL",
+    "SMITTY_VOICE",
+    "SMITTY_HUMOR",
+    "SMITTY_CHAIN"
+  ],
+
+  
+  "victainer": [
+    "SMITTY_RELIC",
+    "SMITTY_NEBULA",
+    "SMITTY_ORB",
+    "SMITTY_PLASMA"
+  ],
+
+  
+  "noxabis": [
+    "SMITTY_LIQUID",
+    "SMITTY_DARK",
+    "SMITTY_ESSENCE",
+    "SMITTY_FLUX"
+  ],
+
+  
+  "floravora": [
+    "SMITTY_METAL",
+    "SMITTY_ESSENCE",
+    "SMITTY_POISON",
+    "SMITTY_SHARD"
+  ],
+
+  
+  "chimerdrio": [
+    "SMITTY_SHADOW",
+    "SMITTY_SOUL",
+    "SMITTY_CHAOS",
+    "SMITTY_VOICE"
+  ],
+
+  
+  "kakopier": [
+    "SMITTY_PULSE",
+    "SMITTY_DREAMS",
+    "SMITTY_ESSENCE",
+    "SMITTY_AURA"
+  ],
+
+  
+  "karasu-me": [
+    "SMITTY_DARK",
+    "SMITTY_FIRE",
+    "SMITTY_SHADOW",
+    "SMITTY_HEART"
+  ],
+
+  
+  "bullktopus": [
+    "SMITTY_SURGE",
+    "SMITTY_CRYSTAL",
+    "SMITTY_ORB",
+    "SMITTY_FLUX"
+  ],
+
+  
+  "gumugumu": [
+    "SMITTY_HEART",
+    "SMITTY_ENERGY",
+    "SMITTY_DARK",
+    "SMITTY_CUBE"
+  ],
+
+  
+  "santoryu": [
+    "SMITTY_FEAR",
+    "SMITTY_CORE",
+    "SMITTY_SHADOW",
+    "SMITTY_MASK"
+  ],
+
+  
+  "roostace": [
+    "SMITTY_ENERGY",
+    "SMITTY_CHAIN",
+    "SMITTY_ESSENCE",
+    "SMITTY_FUEL"
+  ],
+
+  
+  "bogace": [
+    "SMITTY_PLASMA",
+    "SMITTY_SHADOW",
+    "SMITTY_CHAOS",
+    "SMITTY_ESSENCE"
+  ],
+
+  
+  "milliant": [
+    "SMITTY_MIST",
+    "SMITTY_ESSENCE",
+    "SMITTY_VOID",
+    "SMITTY_DARK"
+  ],
+
+  
+  "terroragon": [
+    "SMITTY_METAL",
+    "SMITTY_ENERGY",
+    "SMITTY_CHAOS",
+    "SMITTY_MIST"
+  ],
+
+  
+  "godread": [
+    "SMITTY_ENERGY",
+    "SMITTY_SOUL",
+    "SMITTY_PULSE",
+    "SMITTY_TOUCH"
+  ],
+
+  
+  "duschmare": [
+    "SMITTY_PLASMA",
+    "SMITTY_ENERGY",
+    "SMITTY_PULSE",
+    "SMITTY_SLIME"
+  ],
+
+  
+  "abyssuma": [
+    "SMITTY_CIRCUIT",
+    "SMITTY_SURGE",
+    "SMITTY_CORE",
+    "SMITTY_FUEL"
+  ],
+
+  "clefangar": [
+    "SMITTY_SURGE",
+    "SMITTY_CHAOS",
+    "SMITTY_HUMOR",
+    "SMITTY_FUEL"
+  ],
+
+  
+  "omnitto": [
+    "SMITTY_CHAOS",
+    "SMITTY_CUBE",
+    "SMITTY_PRISM",
+    "SMITTY_MIST"
+  ],
+
+  
+  "umbraffe": [
+    "SMITTY_RELIC",
+    "SMITTY_SHADOW",
+    "SMITTY_CHAOS",
+    "SMITTY_MASK"
+  ],
+
+  
+  "tartadra": [
+    "SMITTY_SLIME",
+    "SMITTY_MASK",
+    "SMITTY_NEBULA",
+    "SMITTY_SURGE"
+  ],
+
+  
+  "churry": [
+    "SMITTY_SOUL",
+    "SMITTY_HEART",
+    "SMITTY_PRISM",
+    "SMITTY_SURGE"
+  ],
+
+  
+  "gazorpsmitfield": [
+    "SMITTY_ORB",
+    "SMITTY_DARK",
+    "SMITTY_MIST",
+    "SMITTY_ERROR"
+  ],
+
+  
+  "hologrick": [
+    "SMITTY_FEAR",
+    "SMITTY_MIST",
+    "SMITTY_BRAIN",
+    "SMITTY_RELIC"
+  ],
+
+  
+  "seekling": [
+    "SMITTY_FUEL",
+    "SMITTY_BRAIN",
+    "SMITTY_AURA",
+    "SMITTY_MIST"
+  ],
+
+  
+  "picklisk": [
+    "SMITTY_FEAR",
+    "SMITTY_PRISM",
+    "SMITTY_LIQUID",
+    "SMITTY_MIST"
+  ],
+
+  
+  "bravehound": [
+    "SMITTY_HEART",
+    "SMITTY_FLUX",
+    "SMITTY_MIST",
+    "SMITTY_VOID"
+  ],
+
+  
+  "tengale": [
+    "SMITTY_SLIME",
+    "SMITTY_GLITCH",
+    "SMITTY_FIBER",
+    "SMITTY_FUEL"
+  ],
+
+  
+  "hyplagus": [
+    "SMITTY_BRAIN",
+    "SMITTY_NEBULA",
+    "SMITTY_JUICE",
+    "SMITTY_DARK"
+  ],
+
+  
+  "demonoth": [
+    "SMITTY_SOUL",
+    "SMITTY_CIRCUIT",
+    "SMITTY_PRISM",
+    "SMITTY_PULSE"
+  ],
+
+  "despeko": [
+    "SMITTY_JUICE",
+    "SMITTY_CHAOS",
+    "SMITTY_ERROR",
+    "SMITTY_SHARD"
+  ],
+
+  
+  "missingno": [
+    "SMITTY_MIST",
+    "SMITTY_RELIC",
+    "SMITTY_CHAOS",
+    "SMITTY_SHADOW"
+  ]
+}
